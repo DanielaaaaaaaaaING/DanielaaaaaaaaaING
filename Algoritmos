@@ -1,0 +1,68 @@
+Algoritmo Hotel_Resort
+	Escribir"Buenos dias habla al Hotel Resort, con quien tengo el gusto"
+	leer nombre 
+	escribir "En que le podemos ayudar " nombre 
+	escribir "me gustaria saber si tiene habitaciones disponibles " 
+	escribir "Contamos con las siguentes opciones de Habitaciones" 
+    escribir "1. Economica "
+    escribir "2. Especial "
+    escribir "3. Doble "
+	escribir "4. Suite -Luna de miel-"
+	escribir " que habitacion desea reservar " nombre 
+	Repetir
+        Leer Hab_Seleccionada 
+        Si Hab_Seleccionada<1 o Hab_Seleccionada>4 Entonces
+			escribir "Esa opcion no la tenemos, favor de ingresar una nueva  "
+	    fin si 
+    Hasta Que Hab_Seleccionada>=1 y Hab_Seleccionada<=4
+	Si Hab_Seleccionada=1 Entonces
+		escribir " la haitacion economica tiene el precio de $650"
+		escribir " cuantas noches desea reservar la habitacion "
+		leer resev
+		escribir " usted reservaria " resev " noches"
+		precio = 650
+		sub= precio * resev 
+		IVA= sub * .12
+		pago = sub + iva 
+		escribir " usted pagaria " pago " por los dias de reservacion asignados "
+		escribir "El Hotel Resort les decea una buena estancia, gracias por elejirnos"
+	Fin Si 
+	si Hab_Seleccionada=2 entonces 
+		escribir " la haitacion especial tiene el precio de $1350"
+		escribir " cuantas noches desea reservar la habitacion "
+		leer resev
+		escribir " usted reservaria " resev " noches"
+		precio = 1350
+		sub= precio * resev 
+		IVA= sub * .12
+		pago = sub + iva 
+		escribir " usted pagaria " pago " por los dias de reservacion asignados "
+		escribir "El Hotel Resort les decea una buena estancia, gracias por elejirnos"
+	FinSi
+	Si Hab_Seleccionada=3 Entonces
+		escribir " la haitacion doble tiene el precio de $2500"
+		escribir " cuantas noches desea reservar la habitacion "
+		leer resev
+		escribir " usted reservaria " resev " noches"
+		precio = 2500
+		sub= precio * resev 
+		IVA= sub * .12
+		pago = sub + iva 
+		escribir " usted pagaria " pago " por los dias de reservacion asignados "
+		escribir "El Hotel Resort les decea una buena estancia, gracias por elejirnos"
+	Fin Si
+	Si Hab_Seleccionada=4 Entonces
+		escribir " la haitacion Suite -Luna de miel-  tiene el precio de $4500"
+		escribir " cuantas noches desea reservar la habitacion "
+		leer resev
+		escribir " usted reservaria " resev " noches"
+		precio = 4500
+		sub= precio * resev 
+	    des= sub *0.20
+		pago = sub - des 
+		escribir " usted pagaria " pago " por los dias de reservacion asignados "
+		escribir "Felicidades por una nueva vida juntos, el hotel les regala un 20% de descuento en su Hospedaje"
+		escribir "El Hotel Resort les decea una buena estancia, gracias por elejirnos"
+	Fin Si
+	
+FinAlgoritmo
